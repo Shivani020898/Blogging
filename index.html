@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+
+
+    <link rel="stylesheet" href="../Style/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="Main_container">
+        <!-- header start here -->
+    <header>
+        <!-- logo container -->
+           <div class="logo_container">
+               <p class="logo">Scribber</p>
+               <p class="logo_subheading">Explore,Image,Create</p>
+           </div>
+   <!-- input button container -->
+           <div class="sign">
+               <input type="button" class="header_button" onclick="" value="Sign Up" id="signUp">
+               <input type="button" class="header_button" onclick="" value="Sign In" id="signIn">
+           </div>
+           
+    </header>
+       <!-- header Ends here -->
+
+       <!-- Home page starts here -->
+
+        <div class="post-button-container">
+           <a href="./html/postslist.html"><input type="button" class="post_button" onclick="" value="All Post"></a>
+            <input type="button" class="post_button" onclick="" value="Create Post" id="createPost">
+        </div>
+
+        <!-- Home_page ends -->
+
+
+        <!-- Sign Up Button started here -->
+
+        
+            <div class="modal-content" id="signUpModal">
+                <div class="felx-container">
+                    <h1 class="modal-heading">Get Started</h1>
+                    <span class="close" id="colseSignUpId">&times;</span>
+                </div>
+                
+                <form  >
+                        <label for="name" class="modal-lable">Name</label>
+                        <input type="text" class="modal-textbox" placeholder="Enter Your Name" id="name" required>
+
+                        <label for="UserName" class="modal-lable">User Name</label>
+                        <input type="text" class="modal-textbox" placeholder="Enter Your User Name" id="userName" required>
+
+                        <label for="passwoed" class="modal-lable">Password</label>
+                        <input type="password" class="modal-textbox" placeholder="Enter Your Password" id="pass" required>
+
+                        <label for="confirmPassword" class="modal-lable">Confirm Password</label>
+                        <input type="password" class="modal-textbox" placeholder="Re-enter Your Password" id="confirmPass" required>
+
+                        <button type="submit" class="modal-btn">Sign Up</button>
+                </form>
+            </div>
+      
+        <!-- Sign Up ends here -->
+
+
+        <!-- Sign In Starts Here -->
+    
+        
+            <div class="modal-content" id="signInModal">
+                <div class="felx-container">
+                    <h1 class="modal-heading">Welcome Back!</h1>
+                    <span class="close" id="colseSignInId">&times;</span>
+                </div>
+              
+                <form >
+                        <label for="UserName" class="modal-lable">User Name</label>
+                        <input type="text" class="modal-textbox" placeholder="Enter Your User Name" id="UserName" required>
+
+                        <label for="password" class="modal-lable">Password</label>
+                        <input type="password" class="modal-textbox" placeholder="Enter Your Password" id="password" required>
+
+                        <button type="submit" class="modal-btn" id="signIn">Sign In</button>
+                </form>
+            </div>
+        
+        <!-- not remember part isremaining for code -->
+        <!-- Sign In ends here -->
+
+            <!-- create post -->
+            <div class="modal-content" id="post">
+                <!-- Create Post modal content -->
+                <div class="felx-container">
+                    <h3>Pen Your Post</h3>
+                    <span id="closec">&times;</span>
+                </div>
+
+                <form>
+                    <label for="post-title">Title</label>
+                    <input type="text" id="post-title" placeholder="Enter title of your post">
+
+                    <label for="post-content">Contents</label>
+                    <textarea id="post-content" placeholder="Enter the contents of your post"></textarea>
+
+                    <button >Create</button>
+                </form>
+                   
+               
+            </div>
+    </div>
+    <!-- main container ends here -->
+</body>
+
+</html>
+<script src="../Script/index.js"></script>

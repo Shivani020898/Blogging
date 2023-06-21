@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px ;
+}
+.logo{
+    font-family: 'Montez', cursive;  
+    font-size: 40px;
+    color: blue;  
+    margin: 0; 
+}
+.logo_subheading{
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    font-size: 20px;
+}
+.sign{
+    display: flex;
+    gap: 15px;
+}
+.header_button{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.post-button-container{
+    display: flex;
+    align-items: center;
+    height: 600px ;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.post-button-container input{
+    font-size: 20px;
+    background-color: #FFA500;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.modal-content{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    left: 600px;
+    bottom: 200px;
+
+}
+#signInModal{
+    display: none;
+}
+#signUpModal{
+    display: none;
+}
+.felx-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    border-bottom: 1px solid black;
+}
+.modal-content form{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    margin: 10px 10px;
+}
+.modal-content form label{
+    margin: 10px 5px 0px 0px;
+}
+.modal-content form button{
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: rgb(6, 179, 6);
+    color: white;
+    cursor: pointer;
+}
+.modal-content form input{
+    border: none;
+    background-color: rgb(235, 234, 234);
+}
+.close{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#post{
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    position: fixed;
+    left: 400px;
+    bottom: 100px;
+    
+}
+#post{
+    display: none;
+}
+#post textarea{
+    height: 100px;
+    border: 0px;
+    background-color: rgb(235, 234, 234);
+}
+#post textarea:hover{
+    border: 0px;
+}
+#post button{
+    width : 150px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+@media screen and (max-width:700px) {
+    #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px ;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .logo_subheading{
+        font-size: 15px;
+    }
+    .modal-content {
+    
+        left: 300px;
+        bottom: 1600px;
+    }
+}
+
+
+
+
+
+
+
+
+

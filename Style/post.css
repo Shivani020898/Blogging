@@ -1,0 +1,141 @@
+/* post.css */
+
+/* Header styles */
+
+/* Post container styles */
+#main{
+    background-color: rgb(226, 226, 226);
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+.post-container {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+}
+#b-log{
+    text-decoration: none;
+}
+/* Post title styles */
+#post-title {
+    font-size: 24px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Author container styles */
+.author-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#author-name {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Edit button styles */
+#edit-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Post text styles */
+#post-text {
+    font-size: 18px;
+  
+}
+
+/* Like container styles */
+#like-com{
+    margin-left: 150px;
+}
+.like-container {
+    margin-top: 20px;
+}
+
+/* Like button styles */
+#like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Like count styles */
+#like-count {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Comment container styles */
+.comment-container {
+    margin-top: 20px;
+}
+
+/* Comment input styles */
+#comment-input {
+    width: 300px;
+    padding: 5px;
+}
+
+/* Comment button styles */
+#comment-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* All Comments styles */
+.all-comments {
+    margin-top: 20px;
+    width: 950px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comment {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* For the Edit button */
+#edit-button {
+    background-color: red;
+
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* For the Like button */
+  #like-button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Adding icons to the buttons */
+  .edit-button::before {
+    content: "\f044"; /* Font Awesome edit icon code */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+  }
+  
+  .like-button::before {
+    content: "\f164"; /* Font Awesome thumbs-up icon code */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+  }
+  

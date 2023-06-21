@@ -1,0 +1,218 @@
+/* postslist.css */
+
+/* Part 1: Background color */
+body {
+    background-color: #ffeedd;
+  }
+  
+  /* Part 2: Header styling (assuming you have already defined styles for the header) */
+
+  
+  /* Part 3: Post card styling */
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px ;
+}
+.logo{
+    font-family: 'Montez', cursive;  
+    font-size: 40px;
+    color: blue;  
+    margin: 0; 
+}
+.logo_subheading{
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    font-size: 20px;
+}
+.sign{
+    display: flex;
+    gap: 15px;
+}
+.header_button{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#b-log{
+    text-decoration: none;
+}
+
+#Main_Container{
+    margin: auto;
+    margin-top: 30px;
+}
+
+  .container {
+    display: flex;
+ 
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+     border-radius: 15px;
+     background-color: rgb(235, 227, 227);
+  }
+  #name{
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-top: 55px;
+border-radius: 15px 0px 0px 15px ;
+    width: 170px;
+    background-color: white;
+  }
+  #name p {
+    font-size: 16px;
+    color: rgb(199, 186, 186);
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  #des{
+      padding: 20px 20px 25px 0px;
+  }
+  #des #des-hed{
+    font-size: 18px;
+    color: rgb(199, 186, 186);
+    margin-bottom: 10px;
+  }
+  
+  
+  .container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .container p {
+    margin: 0;
+  }
+  
+  .container div:first-child {
+    font-weight: bold;
+  }
+  
+  /* .container div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } */
+  
+  .container span {
+    cursor: pointer;
+  }
+  
+  /* Part 4: Trash icon */
+  .container span:first-child {
+    color: red;
+  }
+  
+  /* Part 5: Ellipsis icon */
+  .container span:last-child {
+    color: #000;
+  }
+  
+  .container span:hover {
+    cursor: pointer;
+  }
+  
+  /* Part 6: Responsive design */
+  #Main_Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* #fifth {
+    margin-bottom: 20px;
+  } */
+  
+  /* Other styles specific to your project */
+
+  /* Part 4: Trash icon */
+/* .delete-icon {
+    position: relative;
+    left: 530px;
+    bottom: 30px;
+
+} */
+#delete{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Part 5: Ellipsis icon */
+.ellipsis-icon {
+    color: #dabbbb;
+    position: relative;
+    left: 540px;
+    top: 10px;
+}
+
+/* Part 6: Responsive design */
+.container {
+    flex-basis: 45%;
+}
+
+/* Add the following styles to the existing CSS */
+.container span {
+    cursor: pointer;
+}
+
+.container span:hover {
+    cursor: pointer;
+}
+
+/* Delete post modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 350px;
+    height: 90px;
+    text-align: center;
+}
+
+.modal-buttons {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-buttons button {
+    margin:  10px;
+    width: 70px;
+}
+#delete-yes{
+    background-color: green;
+    border: 0px;
+    color: #fff;
+}
+#delete-no{
+    background-color: red;
+    border: 0px;
+    color: #fff;
+}
+
+/* Show the modal when the delete icon is clicked */
+.container .delete-icon:hover {
+    cursor: pointer;
+}
+
+/* Other styles specific to your project */
+
+  

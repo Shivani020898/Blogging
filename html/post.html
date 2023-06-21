@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style/common.css">
+    <link rel="stylesheet" href="../Style/index.css">
+    <link rel="stylesheet" href="../Style/post.css">
+</head>
+<body>
+    <header>
+        <!-- logo container -->
+           <div class="logo_container">
+               <a id="b-log" href="../index.html"><p class="logo">Scribber</p></a>
+               <p class="logo_subheading">Explore,Image,Create</p>
+           </div>
+   <!-- input button container -->
+           <div class="sign">
+               <input type="button" class="header_button" onclick="" value="Sign Up" id="signUp">
+               <input type="button" class="header_button" onclick="" value="Sign In" id="signIn">
+           </div>
+           
+    </header>
+
+<div id="main">
+    <div class="post-container">
+        <h1 id="post-title">Everything you should know about 'module' 'require' in Node.js</h1>
+        <div class="author-container">
+            <p id="author-name">Sristi Gupta</p>
+            <button id="edit-button">
+                Edit <i class="fas fa-edit"></i>
+            </button>
+        </div>
+        <p id="post-text">Node.js is an open-source, server-side JavaScript runtime environment built on Chrome's V8 JavaScript engine. It allows developers to run JavaScript code outside the browser, enabling them to build scalable and efficient network applications. Node.js uses an event-driven, non-blocking I/O model, making it lightweight and capable of handling a large number of concurrent connections.
+
+            One of the key advantages of Node.js is its vast ecosystem of modules and libraries available through npm (Node Package Manager). This extensive collection of packages allows developers to quickly and easily integrate pre-existing code into their projects, boosting productivity and accelerating development timelines.</p>
+    </div>
+       
+  <div id="like-com">
+    <div class="like-container">
+        <button id="like-button">
+            <i class="fas fa-thumbs-up"></i> Like
+        </button>
+        <p id="like-count">Be the first one to like this!</p>
+    </div>
+    
+    <div class="comment-container">
+        <input type="text" id="comment-input" placeholder="Leave a comment...">
+        <button id="comment-button">Comment</button>
+    </div>
+    
+    <div class="all-comments">
+        <!-- Comments will be added dynamically using JavaScript -->
+    </div>
+</div>
+</div>
+  
+</body>
+<script src="../Script/post.js"></script>
+</html>
